@@ -24,8 +24,5 @@ const styles = StyleSheet.create({
     texto: {
         fontSize: 20,
         marginTop: 10,
-    },
-    bloco: {
-        alignItems: 'center',
     }
 });

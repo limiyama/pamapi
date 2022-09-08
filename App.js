@@ -4,13 +4,13 @@ import Tempo from './components/Tempo';
 import Api from './components/Api';
 
 export default function App() {
-  const [dados, setDados] = useState("");
+  const [depois, setDepois] = useState("");
   const [atuais, setAtuais] = useState("");
   const [dados, setDados] = useState("");
   const [cidade, setCidade] = useState("");
 
   async function carregaDados(){
-    const response = await Api.get(`weather?array_limit=2&fields=only_results,temp,city_name,forecast,max,min,date,description&key=a3460caf&city_name=${cidade},SP`)
+    const response = await Api.get(`weather?array_limit=2&fields=only_results,temp,city_name,forecast,max,min,date,description&key=a1fd3a9c&city_name=${cidade},SP`)
       setAtuais(response.data.forecast[0]);
       setDepois(response.data.forecast[1]);
       setDados(response.data)
